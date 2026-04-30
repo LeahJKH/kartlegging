@@ -34,29 +34,40 @@ main > div {
 
 main {
     display: grid;
-    grid-template-columns: repeat(3, 100px);
+    /* grid-template-columns: repeat(3, 100px);
     grid-template-rows: 50px 50px 50px;
-    gap: 10px;
+    gap: 10px; */
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: repeat(3, 50px);
+    grid-template-areas: 
+   "a1 a2 a2 ."
+    ".  b2 b3 ."
+    "c1 c2 c3 c3";
 }
 
 #gridbox1 {
-grid-column-start: 2;
-grid-column-end: 4;
+/* grid-column-start: 2;
+grid-column-end: 4; */
+grid-area: a1;
 }
 #gridbox2 {
-grid-column-start: 1;
-grid-row-start: 1;
+/* grid-column-start: 1;
+grid-row-start: 1; */
+grid-area: a2;
+
 }
 #gridbox3 {
-
+grid-area: b2;
 }
 #gridbox4 {
-grid-row-start: 2;
-grid-row-end: 4;
+/* grid-row-start: 2;
+grid-row-end: 4; */
+grid-area: b3;
 }
 #gridbox5 {
-
+grid-area: c1;
 }
 #gridbox6 {
-
+grid-area: c3;
 }
+@media ()
