@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "Quicksand";
+    src: url("./Quicksand/Quicksand-VariableFont_wght.ttf");
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand";
+}
+
+main > div {
+    /* width: 50px;
+    height: 50px; */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    background-color: blueviolet;
+}
+/* main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 250px;
+    height: 200px;
+    gap: 10px;
+}
+#box1 {
+    justify-self: ;
+} */
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: 50px 50px 50px;
+    gap: 10px;
+}
+
+#gridbox1 {
+grid-column-start: 2;
+grid-column-end: 4;
+}
+#gridbox2 {
+grid-column-start: 1;
+grid-row-start: 1;
+}
+#gridbox3 {
+
+}
+#gridbox4 {
+grid-row-start: 2;
+grid-row-end: 4;
+}
+#gridbox5 {
+
+}
+#gridbox6 {
+
+}
